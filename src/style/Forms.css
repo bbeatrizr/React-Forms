@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{ 
+  font-size: 1rem;
+  font-weight: 400;
+  overflow: hidden;
+  background-color: silver;
+}
+
+.title {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.group-input {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  font-size: 20px;
+}
+
+.form-group {
+  padding: 5px;
+}
+
+.form-buttons {
+  padding-top: 40px;
+  outline: none;
+  border: none;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.form-control {
+  font-size: 15px;
+  color: #666;
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 30px 0 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;   
+}
+
+.form-control:hover {
+  border: 2px solid black;
+}
+
+.forms {
+  padding-bottom: 54px;
+  padding-top: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-sing {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  background: #192350;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  border: none;
+}
+
+.btn-log {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  width: 100%;
+  height: 45px;
+  background-color: rgb(37, 134, 172);
+  border: none;
+  border-radius: 25px;
+}
+
+.form-buttons > button:hover {
+  background-color: gray;
+  transition-duration: 0.4s;
+  transform: scale(1.1);
+}
+
+.btn-google-apple > button:hover {
+  transition-duration: 0.4s;
+  transform: scale(1.1);
+  background-color: gray;
+}
+
+.btn-google-apple {
+  border-radius: 25px;
+  border: none;
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-google-apple button svg{
+  margin-right: 10px;
+}
+
+.btn-apple {
+  font-weight: bold;
+  border-radius: 25px;
+  width: 150px;
+  position: relative;
+  height: 40px;
+  border: none;
+  background-color: rgb(29, 28, 28);
+  color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.btn-google {
+  font-weight: bold;
+  background-color: rgb(29, 28, 28);
+  color: #e6e6e6;
+  border: none;
+  position: relative;
+  height: 40px;
+  border-radius: 25px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper-image {
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper-slider {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-arrow {
+  z-index: 999;
+}
+
+.slick-arrow::before {
+  font-size: 25px!important;
+}
+
+.slick-prev {
+  position: absolute !important;
+  bottom: 20px !important;
+  top: initial !important;
+  right: 70px !important;
+  left: initial !important;
+}
+
+.slick-next {
+  position: absolute !important;
+  bottom: 20px !important;
+  top: initial !important;
+  right: 40px !important;
+  left: initial !important;
+}
